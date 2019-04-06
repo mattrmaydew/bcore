@@ -1,0 +1,2 @@
+# bcore
+bright core project
