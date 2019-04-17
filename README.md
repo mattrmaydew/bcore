@@ -3,6 +3,7 @@ bright core project
 
 This is the URL to my deployed project
 https://eloquent-meitner-dc8cfa.netlify.com/#/
+https://5cb7aa2e5d807464c73fe762--eloquent-meitner-dc8cfa.netlify.com/#/
 
 My approach to this project was to first understand the environment I was working with.  Up to this point I've used SQL to do all orderBy 
 and the NoSql database concept was quite a culture shock for me.  So I started with sorting.  Last week I read a novel of code and techniqes to get up to speed with Vue.js. The more I read, the more I fell in love with Vue!  It is just awsome.  Next I got involved with setting up a database and all the utilities on my computer.  I spent more time adjusting my computer than on the project I believe.  I reached out to the britecore hiring team and got some ideas last wednesday and decided on VSCode using powershell to mold my modules together. Next! 
