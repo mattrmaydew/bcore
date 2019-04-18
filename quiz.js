@@ -1,4 +1,4 @@
-let fernet = require("fernet")
+let fernet = require("./fernet")
 let secret = new fernet.Secret('TluxwB3fV_GWuLkR1_BzGs1Zk90TYAuhNMZP_0q4WyM=')
 var token = new fernet.Token({
   secret: secret,
