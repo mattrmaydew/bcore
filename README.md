@@ -6,6 +6,7 @@ Things to look for
  1.  updates for tags substring out comma's and creating a delete option prior to saving
  2.  updates for country, state, city dependent dropdowns in the profile section
  
-please share your idea's and advice with me as I am always learning.  Thank you for your interest.
+please share your idea's and advice with me, as I am always learning. Please reach out to me anytime.  My email is below. 
+Thank you for your interest.
 
 mattrmaydew@gmail.com
