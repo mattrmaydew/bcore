@@ -1,3 +1,3 @@
-# Project Sources <src img='https://www.youtube.com/channel/UCnj1BK9TU32-bOlZ9415fuw'>
+# Project Sources 
 
-Front end development work for various projects.  If you have arrived here via Code inspire 
+Front end development work for various projects.  If you have arrived here via Code inspire.  Please help yourself to the source in vue-shop. 
