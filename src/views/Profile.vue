@@ -71,7 +71,7 @@
                         </div>
 
                         <div class="col-md-6">
-                          <select name="myState" :disabled="countries.length == 0" v-model="selectedState" class="form-control form-group">
+                          <select name="myState" :disabled="countries && countries.length == 0" v-model="selectedState" class="form-control form-group">
                               <option :value="selectedState" hidden v-if="selectedState == ''">Select a State</option>
                               <option :value="null" hidden v-else>{{profile.state}}</option>
                               <option v-for="(state_obj, state) in countries" :key="state">{{ state }}</option>
