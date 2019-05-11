@@ -71,17 +71,17 @@
                         </div>
 
                         <div class="col-md-6">
-                          <select :disabled="countries.length == 0" v-model="selectedState" class="form-control form-group">
-                              <option :value="null" hidden v-if="profile.state == null">Select a State</option>
-                              <option :value="null" hidden default>{{profile.state}}</option>
+                          <select name="myState" :disabled="countries.length == 0" v-model="selectedState" class="form-control form-group">
+                              <option :value="selectedState" hidden v-if="selectedState == ''">Select a State</option>
+                              <option :value="null" hidden v-else>{{profile.state}}</option>
                               <option v-for="(state_obj, state) in countries" :key="state">{{ state }}</option>
                           </select>
                         </div>
 
                         <div class="col-md-6">
-                            <select :disabled="cities.length == 0" v-model="selectedCity" class="form-control form-group">
-                                <option :value="null" hidden v-if="profile.city == null">Select a City</option>
-                                <option :value="null" hidden default>{{profile.city}}</option>
+                            <select id="myCity" :disabled="cities.length == 0" v-model="selectedCity" class="form-control form-group">
+                                <option :value="selectedCity" hidden v-if="selectedCity == ''">Select a City</option>
+                                <option :value="null" hidden v-else>{{profile.city}}</option>
                                 <option v-for="city in cities" :key="city">{{city}}</option>
                             </select>
                         </div>
