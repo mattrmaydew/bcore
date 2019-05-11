@@ -209,8 +209,8 @@ export default {
         city: null,
         states: null,
         selectedCountry: null,
-        selectedState: null,
-        selectedCity: null
+        selectedState: '',
+        selectedCity: ''
         
         
         
