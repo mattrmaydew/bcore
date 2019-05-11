@@ -10,5 +10,6 @@ Things to look for
 please share your idea's and advice with me, as I am always learning. Please reach out to me anytime.  My email is below. 
 Thank you for your interest.
 
-Special thanks to Hujjat 
+Special thanks to Hujjat for inspiring programmers like me to rethink the world of code. 
+
 mattrmaydew@gmail.com
