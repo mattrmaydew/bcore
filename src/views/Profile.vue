@@ -72,16 +72,16 @@
 
                         <div class="col-md-6">
                           <select name="myState" :disabled="countries && countries.length == 0" v-model="selectedState" class="form-control form-group">
-                              <option :value="selectedState" hidden v-if="selectedState == ''">Select a State</option>
-                              <option :value="null" hidden v-else>{{profile.state}}</option>
-                              <option v-for="(state_obj, state) in countries" :key="state">{{ state }}</option>
+                              <option :value="selectedState" hidden v-if="profile.state == null && selectedState == ''">Select a State</option>
+                              <option v-else default>{{profile.state}}</option>
+                              <option v-for="(state_obj, state) in countries"  :key="state">{{ state }}</option>
                           </select>
                         </div>
 
                         <div class="col-md-6">
-                            <select id="myCity" :disabled="cities.length == 0" v-model="selectedCity" class="form-control form-group">
-                                <option :value="selectedCity" hidden v-if="selectedCity == ''">Select a City</option>
-                                <option :value="null" hidden v-else>{{profile.city}}</option>
+                            <select id="myCity" :disabled="cities && cities.length == 0" v-model="selectedCity" class="form-control form-group">
+                                <option :value="selectedCity" hidden v-if="profile.city == null && selectedCity == ''">Select a City</option>
+                                <option v-else default>{{profile.city}}</option>
                                 <option v-for="city in cities" :key="city">{{city}}</option>
                             </select>
                         </div>
@@ -266,7 +266,8 @@ export default {
             this.profile.city = null
             
             
-            // Populate list of countries in the second dropdown
+            // Populate list of States in the second dropdown
+            // States will be populated in countries object
             if(this.places[country].name) {
             //    this.countries = this.places[this.selectedContinent] 
                 this.countries = this.places[country].states
@@ -279,7 +280,7 @@ export default {
             this.cities = [];
             this.selectedCity = "";
             this.profile.city = null
-            // Now we have a continent and country. Populate list of cities in the third dropdown
+            // Now we have the states. Populate list of cities in the third dropdown under state array
             if (state) {
                 this.cities = this.countries[state]
             }
