@@ -1,4 +1,7 @@
 # vue-shop
+# Matt Maydew
+
+## Some things to look for!
 
 ## Project setup
 ```
