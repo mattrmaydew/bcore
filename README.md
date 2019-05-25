@@ -1,5 +1,5 @@
 # vue-shop
- ![ScreenShot](<div class="border rounded-2 repository-og-image js-repository-image-container" style="background-image: url('https://repository-images.githubusercontent.com/179789464/d6ff4000-7e70-11e9-9468-fa5f5dd8587c')">)
+ ![ScreenShot](https://repository-images.githubusercontent.com/179789464/d6ff4000-7e70-11e9-9468-fa5f5dd8587c)
 
 # Matt Maydew
 
