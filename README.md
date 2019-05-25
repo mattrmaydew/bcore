@@ -12,4 +12,4 @@ addTag(){
        this.tag = "";
     },
     
-This kind of cleans of some of the project code at this point.  I hope you like this!
+This kind of cleans of some of the issues I was facing while adding tags to each product.  I hope you like this!
