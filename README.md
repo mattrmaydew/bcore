@@ -5,7 +5,7 @@
 
 I hope you have an opportunity to look into this source file for Vue-shop.
 
-Within Matt_Master/src/views/Product.vue you will notice this bit of code.  Also in this .vue I have added capability to delete tags
+Within src/views/Product.vue you will notice this bit of code.  Also in this .vue I have added capability to delete tags
 
 addTag(){
        
