@@ -13,4 +13,4 @@ addTag(){
        this.tag = "";
     },
     
-Just messing around in my free time.  I hope you like this!
+Vue JS is a great platform for development.  I hope you like this!
