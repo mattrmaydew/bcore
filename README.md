@@ -13,4 +13,4 @@ addTag(){
        this.tag = "";
     },
     
-This kind of cleans of some of the issues I was facing while adding tags to each product.  I hope you like this!
+You can add and delete tags for each product.  I hope you like this!
