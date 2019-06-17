@@ -3,11 +3,11 @@
     <div class="container">
       <h1 class="text-center p-5">Our Products List</h1>
       <div class="row">
-        <div class="col-md-4" v-for="(product,index) in products" :key="index" >
-          <div class="card product-item" >
+        <div class="col-md-4" v-for="(product,index) in products" :key="index">
+          <div class="card product-item">
             <carousel :perPage="1">
               <slide v-for="(image, index) in product.images" :key="index">
-                <img :src="image" alt="..." height="250px" >
+                <img :src="image" alt="..." height="250px">
               </slide>
             </carousel>
 
@@ -17,10 +17,10 @@
                 <h5 class="card-prices">{{product.price | currency}}</h5>
               </div>
               <add-to-cart
-                :product-image="getImage(product.images)"
-                :name="product.name"
+                :image="getImage(product.images)"
+                :p-id="product.id"
                 :price="product.price"
-                :productId="product.id"
+                :name="product.name"
               ></add-to-cart>
             </div>
           </div>
@@ -46,10 +46,8 @@ export default {
 
   methods: {
     getImage(images) {
-      return products[0];
-      
-    },
-    
+      return images[0];
+    }
   },
 
   firestore() {
@@ -63,8 +61,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .products {
-  margin-top: 7rem;
-  background: #f2f2f2;
+//  margin-top: 7rem;
+  background: rgb(159, 164, 170);
   padding-bottom: 3rem;
+  color: rgb(12, 12, 12);
+  font-weight: bold; 
+  
 }
 </style>
